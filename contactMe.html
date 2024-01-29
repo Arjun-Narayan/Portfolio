@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio/ContactMe</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #container{
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        h1{
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h3{
+            margin-bottom: 30px;
+            font-weight: 900;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 23px;
+        }
+
+        #container > p{
+            margin-bottom: 40px;
+        }
+
+        .contact-box{
+            display: flex;
+            background: white;
+        }
+
+        .left{
+            flex-basis: 60%;
+            padding: 40px 60px;
+            background-color: white;
+        }
+
+        .right{
+            flex-basis: 40%;
+            padding: 40px;
+            background-color:navy;
+            color: white;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .right > p{
+            margin-bottom: 7px;
+            font-size: 17px;
+        }
+
+        .inputs{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+
+        .input{
+            flex-basis: 45%;
+        }
+
+        label{
+            margin-bottom: 6px;
+            display: block;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        input{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            padding-bottom: 6px;
+            background-color: white;
+        }
+
+        textarea{
+            width: 100%;
+            border: 1px solid black;
+            outline: none;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        button{
+            width: 100px;
+            margin-top: 15px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="circle"></div>
+        <div>
+            <p id="title"><b><a href="./index.html">Arjun Narayan </a></b><span style="font-size: 25px;">Computer Science Student</span></p>
+        </div>
+        <div id="navbar">
+            <nav>
+                <a href="./resume.html"> Resume |</a>
+                <a href="./outreach.html"> Outreach |</a>
+                <a href="./personal.html"> Personal |</a>
+                <a href="./contactMe.html" style="color:chocolate"> Contact Me</a>
+            </nav>
+        </div>
+    </div>
+    <div id="container">
+        <h1>Contact Me</h1>
+        <p style="font-family: 'Source Code Pro', monospace;font-weight: 600;">
+            I would love to respond to your queries and help you.
+            <br />
+            Feel free to contact me.
+        </p>
+        <div class="contact-box">
+            <div class="left">
+                <h3>Send your request</h3>
+                <form>
+                    <div class="inputs">
+                        <div class="input">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your Name" />
+                        </div>
+                        <div class="input">
+                            <label>Phone Number</label>
+                            <input type="text" placeholder="Your number" />
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <div class="input">
+                            <label>Email</label>
+                            <input type="email" placeholder="Your email" />
+                        </div>
+                        <div class="input">
+                            <label>Title</label>
+                            <input type="text" placeholder="Title" />
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+            <div class="right">
+                <h3>Contact Me</h3>
+                <p>Email: emailid@gmail.com</p>
+                <p>Mobile Phone: +91 xxxxxxxxxx</p>
+                <p>LinkedIn: LinkedIn account</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
